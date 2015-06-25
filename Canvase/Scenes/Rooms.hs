@@ -46,6 +46,11 @@ rooms3 = do
   m <- readFile "rooms3"
   return $ Scene $ M.fromList $ fromMap 8 (-11) $ parseMap m
 
+rooms4 :: IO Scene
+rooms4 = do
+  m <- readFile "rooms4"
+  return $ Scene $ M.fromList $ fromMap 1 (-4) $ parseMap m
+
 data Field = Player
            | Color Color
            | Empty
@@ -73,7 +78,7 @@ parseField :: Char -> Field
 parseField c = case c of
   'x' -> Player
   'r' -> Color red
-  'g' -> Color lightgreen
+  'g' -> Color limegreen
   'b' -> Color blue
   'm' -> Color magenta
   'c' -> Color cyan
