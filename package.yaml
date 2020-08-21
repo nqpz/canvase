@@ -1,0 +1,33 @@
+name:                canvase
+version:             0.1.0.0
+github:              "nqpz/canvase"
+license:             BSD3
+author:              "Niels G. W. Serup"
+maintainer:          "ngws@metanohi.name"
+copyright:           "2015 Niels G. W. Serup"
+
+extra-source-files:
+- README.md
+
+description:         Please see the README on GitHub at <https://github.com/nqpz/canvase#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- containers
+- mtl
+- safe
+- random
+- SDL
+- SDL-gfx
+- cairo
+- colour
+
+library:
+  source-dirs: src
+
+executables:
+  canvase:
+    main:                Main.hs
+    source-dirs:         app
+    dependencies:
+    - canvase

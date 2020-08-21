@@ -82,7 +82,7 @@ instance Enum Direction2D where
   toEnum 2 = Down
   toEnum 3 = Left
   toEnum n = toEnum $ n `mod` 4
-  
+
   fromEnum Up    = 0
   fromEnum Right = 1
   fromEnum Down  = 2
@@ -129,7 +129,7 @@ cubePoly (c, Position xI yI zI)
 
 squarePoly :: Double -> Double -> Double -> Double -> Polygon
 squarePoly x y w h = [(x, y), (x + w, y), (x + w, y + h), (x, y + h)]
-  
+
 drawPolygon :: FilledPolygon -> CanvaseM ()
 drawPolygon (FilledPolygon points color) = do
   screen <- getScreen

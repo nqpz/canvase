@@ -38,17 +38,17 @@ rooms1 = Scene $ M.fromList $
 
 rooms2 :: IO Scene
 rooms2 = do
-  m <- readFile "rooms2"
+  m <- readFile "rooms/rooms2"
   return $ Scene $ M.fromList $ fromMap 1 (-4) $ parseMap m
 
 rooms3 :: IO Scene
 rooms3 = do
-  m <- readFile "rooms3"
+  m <- readFile "rooms/rooms3"
   return $ Scene $ M.fromList $ fromMap 8 (-11) $ parseMap m
 
 rooms4 :: IO Scene
 rooms4 = do
-  m <- readFile "rooms4"
+  m <- readFile "rooms/rooms4"
   return $ Scene $ M.fromList $ fromMap 1 (-4) $ parseMap m
 
 data Field = Player
