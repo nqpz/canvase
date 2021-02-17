@@ -5,4 +5,4 @@ extra-deps:
 - SDL-gfx-0.7.0.0@sha256:0e3270407550e4a67012d42d45a2df373d628d128e176913d1399f33896e0978,1084
 
 nix:
-  packages: [pkgconfig, SDL, SDL_gfx, cairo]
+  shell-file: default.nix
