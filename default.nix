@@ -11,4 +11,5 @@ haskell.lib.buildStackProject {
   name = "canvase";
   buildInputs = with pkgs_ghc844; [ pkgconfig SDL SDL_gfx cairo ];
   ghc = pkgs_ghc844.haskell.compiler.ghc844;
+  src = ./.;
 }
